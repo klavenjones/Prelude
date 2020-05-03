@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  src: url("../assets/fonts/FuturaPTExtraBold.otf");
+  font-family: FuturaPT;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTExtraBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTHeavy.otf");
+  font-family: FuturaPT;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTHeavyOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBold.otf");
+  font-family: FuturaPT;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTDemi.otf");
+  font-family: FuturaPT;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTDemiOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTMedium.otf");
+  font-family: FuturaPT;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTMediumOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBook.otf");
+  font-family: FuturaPTBook;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBookOblique.otf");
+  font-family: FuturaPTBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTLight.otf");
+  font-family: FuturaPT;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTLightOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBook.otf");
+  font-family: FuturaPTCondensedBook;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBookCondOblique.otf");
+  font-family: FuturaPTCondensedBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondMedium.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondMediumOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondExtraBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondExtraBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: FuturaPT;
+  color: #39374d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  color: #39374d;
+  font-weight: 500;
+}
+
+body h1 {
+  color: #39374d;
+  font-weight: 800;
+}
+
+body p {
+  color: #5e5d6c;
+}
+
+body nav {
+  height: 100px;
+}
+
+.navbar-nav .nav-icon {
+  padding-top: 16px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item .btn-contact {
+  background-color: #00d664;
+  color: #ffffff;
+  padding: 14px 35px 14px;
+  font-size: 16px;
+}
+
+.header {
+  margin: 0 auto;
+  background-image: url("../img/header-background@2x.png");
+  background-size: cover;
+}
+
+.header .container {
+  margin-top: 120px;
+}
+
+.header .container .row .headline {
+  text-align: center;
+}
+
+.header .container .row .headline h1 {
+  font-size: 90px;
+}
+
+.header .container .row .headline h1 span {
+  color: #00d664;
+}
+
+.header .container .row .headline h2 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.header .container .row .headline p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header .container .row .headline p span {
+  color: #39374d;
+  font-weight: bold;
+  border-bottom: 2px solid #39374d;
+}
+
+.header .container .row .headline .headline__CTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 70px auto;
+  max-width: 406px;
+  height: 60px;
+}
+
+.header .container .row .headline .headline__CTA .button__CTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  padding: 16px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #39374d;
+}
+
+.header .container .row .headline .headline__CTA .button__CTA p {
+  font-size: 16px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.header .container .row .headline .headline__CTA .button__CTA p:first-child {
+  font-size: 26px;
+  height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 10px;
+}
+
+.header .container .row .headline .headline__CTA .play__CTA {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background: #7540ee;
+  border-radius: 100%;
+}
+
+.work {
+  margin: 0 auto;
+  background-image: url("../img/portfolio-background@2x.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.work .portfolio-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px 40px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+.work .portfolio-grid .portfolio-item {
+  background: #cccccc;
+  width: 370px;
+  border: 1px solid white;
+}
+
+.work .portfolio-grid .portfolio-item.one {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+/*# sourceMappingURL=main.css.map */

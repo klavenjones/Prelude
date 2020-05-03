@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+$futura-path: "../assets/fonts";
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTExtraBold.otf");
+  font-family: FuturaPT;
+  font-weight: 900;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTExtraBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 900;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTHeavy.otf");
+  font-family: FuturaPT;
+  font-weight: 800;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTHeavyOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTBold.otf");
+  font-family: FuturaPT;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTDemi.otf");
+  font-family: FuturaPT;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTDemiOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTMedium.otf");
+  font-family: FuturaPT;
+  font-weight: 500;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTMediumOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTBook.otf");
+  font-family: FuturaPTBook;
+  font-weight: 400;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTBookOblique.otf");
+  font-family: FuturaPTBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTLight.otf");
+  font-family: FuturaPT;
+  font-weight: 300;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTLightOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondBook.otf");
+  font-family: FuturaPTCondensedBook;
+  font-weight: 400;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTBookCondOblique.otf");
+  font-family: FuturaPTCondensedBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondMedium.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 500;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondMediumOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 500;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 700;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondExtraBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 900;
+}
+@font-face {
+  src: url("#{$futura-path}/FuturaPTCondExtraBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 900;
+}

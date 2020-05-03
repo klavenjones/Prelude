@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  src: url("../assets/fonts/FuturaPTExtraBold.otf");
+  font-family: FuturaPT;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTExtraBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTHeavy.otf");
+  font-family: FuturaPT;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTHeavyOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBold.otf");
+  font-family: FuturaPT;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBoldOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTDemi.otf");
+  font-family: FuturaPT;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTDemiOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTMedium.otf");
+  font-family: FuturaPT;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTMediumOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBook.otf");
+  font-family: FuturaPTBook;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBookOblique.otf");
+  font-family: FuturaPTBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTLight.otf");
+  font-family: FuturaPT;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTLightOblique.otf");
+  font-family: FuturaPT;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBook.otf");
+  font-family: FuturaPTCondensedBook;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTBookCondOblique.otf");
+  font-family: FuturaPTCondensedBook;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondMedium.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondMediumOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondExtraBold.otf");
+  font-family: FuturaPTCondensed;
+  font-weight: 900;
+}
+
+@font-face {
+  src: url("../assets/fonts/FuturaPTCondExtraBoldOblique.otf");
+  font-family: FuturaPTCondensed;
+  font-style: oblique;
+  font-weight: 900;
+}
+/*# sourceMappingURL=fonts.css.map */
