@@ -825,8 +825,10 @@ body nav {
   padding: 150px 0px;
   min-height: 425px;
   background-color: #7540ee;
+  background-image: url(../img/CTA_BG.jpg);
+  background-size: cover;
+  background-position: center center;
   color: white;
-  border-radius: 8px;
 }
 
 @media (min-width: 576px) {
@@ -837,13 +839,15 @@ body nav {
 
 @media (min-width: 768px) {
   .call-to-action .contact__CTA {
-    padding: 100px 200px;
+    border-radius: 8px;
+    padding: 100px 100px;
   }
 }
 
 @media (min-width: 992px) {
   .call-to-action .contact__CTA {
     margin: 0;
+    padding: 100px 200px;
   }
 }
 

@@ -495,16 +495,22 @@ body {
     padding: 150px 0px;
     min-height: 425px;
     background-color: #7540ee;
+    background-image: url(../img/CTA_BG.jpg);
+    background-size: cover;
+    background-position: center center;
+
     color: white;
-    border-radius: 8px;
+
     @include sm {
       padding: 100px 30px;
     }
     @include md {
-      padding: 100px 200px;
+      border-radius: 8px;
+      padding: 100px 100px;
     }
     @include lg {
       margin: 0;
+      padding: 100px 200px;
     }
     h6 {
       @include headline();
