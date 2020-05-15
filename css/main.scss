@@ -16,8 +16,70 @@ $colors: (
   serviceText: #748494,
 );
 
+// Small tablets and large smartphones (landscape view)
+$screen-sm: 576px;
+
+// Small tablets (portrait view)
+$screen-md: 768px;
+
+// Tablets and small desktops
+$screen-lg: 992px;
+
+// Large tablets and desktops
+$screen-xl: 1200px;
+
 @function color($color-name) {
   @return map-get($colors, $color-name);
+}
+
+//MIXINS
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin headline {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+@mixin button-contact {
+  background-color: color(secondary);
+  color: color(primary);
+  padding: 14px 35px 14px;
+  font-size: 16px;
+}
+
+@mixin button-outline {
+  background-color: color(primary);
+  color: color(secondary);
+  border: 2px solid color(secondary);
+  padding: 16px 36px 16px;
+  font-size: 16px;
 }
 
 body,
@@ -29,6 +91,7 @@ body {
   font-family: FuturaPT;
   color: color(headline);
   box-sizing: border-box;
+
   a {
     color: color(headline);
     font-weight: 500;
@@ -53,10 +116,7 @@ body {
     margin-right: 20px;
 
     .btn-contact {
-      background-color: color(secondary);
-      color: color(primary);
-      padding: 14px 35px 14px;
-      font-size: 16px;
+      @include button-contact();
     }
   }
 }
@@ -71,54 +131,94 @@ body {
       .headline {
         text-align: center;
         h1 {
-          font-size: 90px;
+          font-size: 28px;
           span {
             color: color(secondary);
+          }
+          @include sm {
+            font-size: 30px;
+          }
+          @include md {
+            font-size: 60px;
+          }
+          @include lg {
+            font-size: 90px;
           }
         }
         h2 {
           font-family: "Open Sans";
           font-weight: 300;
-          font-size: 32px;
+          font-size: 16px;
           margin: 20px 0;
+          @include sm {
+            font-size: 24px;
+          }
+          @include md {
+            font-size: 32px;
+          }
         }
         p {
           font-family: "Open Sans";
           font-weight: 400;
-          font-size: 18px;
-
+          font-size: 14px;
           span {
             color: color(headline);
             font-weight: bold;
             border-bottom: 2px solid color(headline);
           }
+          @include sm {
+            font-size: 18px;
+          }
+          @include md {
+            font-size: 20px;
+          }
         }
 
         .headline__CTA {
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           margin: 70px auto;
           max-width: 406px;
           height: 60px;
           .button__CTA {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
             height: 100%;
-            padding: 16px 26px;
+            padding: 20px 15px;
+            width: 205px;
             border-radius: 30px;
             text-decoration: none;
             background-color: color(headline);
+            @include sm {
+              padding: 20px 24px;
+              width: 300px;
+            }
+            @include md {
+              padding: 20px 24px;
+            }
 
             p {
               &:first-child {
-                font-size: 26px;
+                font-size: 22px;
                 height: 100%;
                 align-self: center;
                 margin-right: 10px;
+                margin-bottom: 15px;
+                @include sm {
+                  font-size: 22px;
+                }
               }
-              font-size: 16px;
+              font-size: 10px;
               text-align: right;
+              margin: 0;
               color: color(primary);
+              @include sm {
+                font-size: 14px;
+              }
+              @include md {
+                font-size: 16px;
+              }
             }
           }
           .play__CTA {
@@ -130,6 +230,7 @@ body {
             color: white;
             background: #7540ee;
             border-radius: 100%;
+            margin-left: 10px;
           }
         }
       }
@@ -144,24 +245,48 @@ body {
   margin-top: 150px;
   text-align: center;
   .portfolio-grid {
-    columns: 3 350px;
+    columns: 1;
     column-gap: 20px;
+    @include md {
+      columns: 2 250px;
+    }
+    @include lg {
+      columns: 3 350px;
+    }
+
     .portfolio-item {
       background: #333;
-      height: 350px;
       margin-bottom: 20px;
+      height: 400px;
       padding: 50px;
       font-size: 40px;
       color: white;
-      // background-image: url(nth($images, 8));
+      background-image: url(nth($images, 8));
       background-size: cover;
       background-position: center center;
-
+      @include md {
+        height: 284px;
+      }
+      @include lg {
+        height: 350px;
+      }
       &.tall {
-        height: 530px;
+        height: 400px;
+        @include md {
+          height: 450px;
+        }
+        @include lg {
+          height: 530px;
+        }
       }
       &.short {
-        height: 220px;
+        height: 400px;
+        @include md {
+          height: 200px;
+        }
+        @include lg {
+          height: 220px;
+        }
       }
     }
     @for $i from 1 through 9 {
@@ -171,11 +296,7 @@ body {
     }
   }
   .button__work {
-    background-color: color(primary);
-    color: color(secondary);
-    border: 2px solid color(secondary);
-    padding: 16px 36px 16px;
-    font-size: 16px;
+    @include button-outline();
     margin-top: 50px;
   }
 }
@@ -184,29 +305,66 @@ body {
   margin-top: 100px;
   background-image: url("#{$img}/services-background.png");
   background-size: cover;
-  width: 100%;
+  // width: 100%;
+  .services__right {
+    order: 1;
+
+    @include xl {
+      order: 2;
+    }
+  }
+  .services__left {
+    order: 2;
+
+    @include xl {
+      order: 1;
+    }
+  }
 
   .services__cards {
     display: flex;
+    flex-direction: column;
     color: color(serviceText);
+    @include md {
+      flex-direction: row;
+    }
+    @include lg {
+      flex-direction: row;
+      justify-content: center;
+    }
     .cards__left,
     .cards__right {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      margin: 0;
+      @include sm {
+        align-items: center;
+        margin: 0;
+      }
     }
+
     .cards__right {
-      margin-left: 30px;
       align-items: center;
       justify-content: center;
+      @include md {
+        margin-left: 30px;
+      }
     }
     .service__card {
       padding: 35px 30px;
-      width: 270px;
+      width: 300px;
       min-height: 100px;
       border-radius: 20px;
       margin-bottom: 20px;
       background: color(primary);
       box-shadow: 0 10px 90px rgba(110, 123, 131, 0.2);
+      @include md {
+        width: 300px;
+      }
+      @include lg {
+        width: 270px;
+      }
       .icon {
         width: 60px;
         height: 60px;
@@ -221,14 +379,14 @@ body {
         }
       }
       h2 {
-        font-size: 22px;
-        font-weight: 400;
+        @include headline();
         color: color(headline);
       }
       p {
         font-family: "Open Sans";
         font-size: 16px;
         line-height: 1.6;
+        color: color(serviceText);
       }
       .arrow {
         padding: 10px 0;
@@ -243,27 +401,105 @@ body {
     }
   }
   .services__description {
-    margin-left: 30px;
+    text-align: center;
+    margin: 60px 0;
+    @include lg {
+      margin-left: 40px;
+      text-align: left;
+    }
     h6 {
       text-transform: uppercase;
-      color: color(secondary);
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 20px;
+      color: color(secondary);
+      @include lg {
+        font-size: 16px;
+        margin: 0;
+      }
     }
     h1 {
       font-weight: 600;
-      font-size: 52px;
+      font-size: 30px;
       margin: 30px 0;
       span {
         font-weight: 300;
+      }
+      @include sm {
+        font-size: 35px;
+      }
+      @include md {
+        font-size: 40px;
+        margin: 40px auto;
+      }
+      @include lg {
+        margin: 40px auto 20px;
       }
     }
 
     p {
       font-family: "Open Sans", sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 12px;
+      margin: 0 auto;
       max-width: 440px;
+      color: color(serviceText);
+      @include md {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      @include lg {
+        margin: 0;
+      }
+    }
+
+    @include md {
+      margin: 80px auto;
+      max-width: 450px;
+    }
+  }
+}
+
+.companies {
+  margin: 80px 0;
+  .company__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    .logo {
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.call-to-action {
+  .contact__CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 200px;
+    min-height: 425px;
+    background-color: #7540ee;
+    color: white;
+    border-radius: 2px;
+    h6 {
+      @include headline();
+      margin-bottom: 0;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 52px;
+      margin-top: 10px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .btn-contact {
+      @include button-contact();
+      margin-top: 30px;
     }
   }
 }
