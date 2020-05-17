@@ -217,6 +217,10 @@ body nav {
 }
 
 .navbar-nav .nav-item .btn-contact:hover {
+  background: rgba(0, 214, 100, 0.8);
+}
+
+.navbar-nav .nav-item .btn-contact:hover {
   background-color: #ffffff;
   color: #00d664;
   border: 2px solid #00d664;
@@ -529,6 +533,17 @@ body nav {
   padding: 16px 36px 16px;
   font-size: 16px;
   margin-top: 50px;
+}
+
+.work .button__work:hover {
+  background-color: #00d664;
+  color: #ffffff;
+  padding: 16px 35px 16px;
+  font-size: 16px;
+}
+
+.work .button__work:hover:hover {
+  background: rgba(0, 214, 100, 0.8);
 }
 
 .services {
@@ -964,11 +979,11 @@ body nav {
 }
 
 .call-to-action .contact__CTA .btn-contact:hover {
-  background-color: #ffffff;
-  color: #00d664;
-  border: 2px solid #00d664;
-  padding: 16px 36px 16px;
-  font-size: 16px;
+  background: rgba(0, 214, 100, 0.8);
+}
+
+.call-to-action .contact__CTA .btn-contact:hover {
+  background: rgba(0, 214, 100, 0.9);
 }
 
 footer {
